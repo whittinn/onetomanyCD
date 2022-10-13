@@ -14,6 +14,14 @@
 		8C8DFEDF28DFBB0B004D8136 /* onetomanyCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C8DFEDD28DFBB0B004D8136 /* onetomanyCD.xcdatamodeld */; };
 		8C8DFEE128DFBB0C004D8136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C8DFEE028DFBB0C004D8136 /* Assets.xcassets */; };
 		8C8DFEE428DFBB0C004D8136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C8DFEE228DFBB0C004D8136 /* LaunchScreen.storyboard */; };
+		8C8DFEEC28DFBB36004D8136 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8DFEEB28DFBB36004D8136 /* PersistenceContainer.swift */; };
+		8C8DFEF728E003E2004D8136 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8DFEF628E003E2004D8136 /* BaseRepository.swift */; };
+		8C8DFEF928E0052F004D8136 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8DFEF828E0052F004D8136 /* PersonModel.swift */; };
+		8C8DFEFB28E0053E004D8136 /* VehicleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8DFEFA28E0053E004D8136 /* VehicleModel.swift */; };
+		8C8DFF0828E00647004D8136 /* CDPerson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8DFF0428E00647004D8136 /* CDPerson+CoreDataClass.swift */; };
+		8C8DFF0928E00647004D8136 /* CDPerson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8DFF0528E00647004D8136 /* CDPerson+CoreDataProperties.swift */; };
+		8C8DFF0A28E00647004D8136 /* CDVehicle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8DFF0628E00647004D8136 /* CDVehicle+CoreDataClass.swift */; };
+		8C8DFF0B28E00647004D8136 /* CDVehicle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8DFF0728E00647004D8136 /* CDVehicle+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		8C8DFEE028DFBB0C004D8136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C8DFEE328DFBB0C004D8136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C8DFEE528DFBB0C004D8136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C8DFEEB28DFBB36004D8136 /* PersistenceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceContainer.swift; sourceTree = "<group>"; };
+		8C8DFEF628E003E2004D8136 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		8C8DFEF828E0052F004D8136 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		8C8DFEFA28E0053E004D8136 /* VehicleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleModel.swift; sourceTree = "<group>"; };
+		8C8DFF0428E00647004D8136 /* CDPerson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPerson+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8C8DFF0528E00647004D8136 /* CDPerson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPerson+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8C8DFF0628E00647004D8136 /* CDVehicle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDVehicle+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8C8DFF0728E00647004D8136 /* CDVehicle+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDVehicle+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +58,7 @@
 		8C8DFEC828DFBB0B004D8136 = {
 			isa = PBXGroup;
 			children = (
+				8CE62E5228F87AA000CBBA14 /* CoreDataFiles */,
 				8C8DFED328DFBB0B004D8136 /* onetomanyCD */,
 				8C8DFED228DFBB0B004D8136 /* Products */,
 			);
@@ -61,13 +78,44 @@
 				8C8DFED428DFBB0B004D8136 /* AppDelegate.swift */,
 				8C8DFED628DFBB0B004D8136 /* SceneDelegate.swift */,
 				8C8DFED828DFBB0B004D8136 /* ViewController.swift */,
+				8CE62E5328F87AE800CBBA14 /* Model */,
 				8C8DFEDA28DFBB0B004D8136 /* Main.storyboard */,
+				8C8DFEEB28DFBB36004D8136 /* PersistenceContainer.swift */,
 				8C8DFEE028DFBB0C004D8136 /* Assets.xcassets */,
 				8C8DFEE228DFBB0C004D8136 /* LaunchScreen.storyboard */,
 				8C8DFEE528DFBB0C004D8136 /* Info.plist */,
 				8C8DFEDD28DFBB0B004D8136 /* onetomanyCD.xcdatamodeld */,
 			);
 			path = onetomanyCD;
+			sourceTree = "<group>";
+		};
+		8CE62E5228F87AA000CBBA14 /* CoreDataFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8C8DFF0428E00647004D8136 /* CDPerson+CoreDataClass.swift */,
+				8C8DFF0528E00647004D8136 /* CDPerson+CoreDataProperties.swift */,
+				8C8DFF0628E00647004D8136 /* CDVehicle+CoreDataClass.swift */,
+				8C8DFF0728E00647004D8136 /* CDVehicle+CoreDataProperties.swift */,
+			);
+			path = CoreDataFiles;
+			sourceTree = "<group>";
+		};
+		8CE62E5328F87AE800CBBA14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8CE62E5428F87B1800CBBA14 /* CRUD */,
+				8C8DFEFA28E0053E004D8136 /* VehicleModel.swift */,
+				8C8DFEF828E0052F004D8136 /* PersonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8CE62E5428F87B1800CBBA14 /* CRUD */ = {
+			isa = PBXGroup;
+			children = (
+				8C8DFEF628E003E2004D8136 /* BaseRepository.swift */,
+			);
+			path = CRUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +189,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C8DFEF928E0052F004D8136 /* PersonModel.swift in Sources */,
+				8C8DFF0828E00647004D8136 /* CDPerson+CoreDataClass.swift in Sources */,
 				8C8DFED928DFBB0B004D8136 /* ViewController.swift in Sources */,
 				8C8DFEDF28DFBB0B004D8136 /* onetomanyCD.xcdatamodeld in Sources */,
 				8C8DFED528DFBB0B004D8136 /* AppDelegate.swift in Sources */,
+				8C8DFF0A28E00647004D8136 /* CDVehicle+CoreDataClass.swift in Sources */,
 				8C8DFED728DFBB0B004D8136 /* SceneDelegate.swift in Sources */,
+				8C8DFEEC28DFBB36004D8136 /* PersistenceContainer.swift in Sources */,
+				8C8DFF0928E00647004D8136 /* CDPerson+CoreDataProperties.swift in Sources */,
+				8C8DFEF728E003E2004D8136 /* BaseRepository.swift in Sources */,
+				8C8DFEFB28E0053E004D8136 /* VehicleModel.swift in Sources */,
+				8C8DFF0B28E00647004D8136 /* CDVehicle+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
